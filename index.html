@@ -412,21 +412,22 @@
             gap: 2rem;
         }
 
-        .testimonial-card {
+             .testimonial-card {
             background: var(--light-color);
-            padding: 2rem;
+            padding: 2rem 2rem 2rem 5rem; /* added left padding for the quote */
             border-radius: 10px;
-            position: relative;
+            position: relative; /* needed for ::before positioning */
         }
 
-        .testimonial-card::before {
+         .testimonial-card::before {
             content: '"';
             position: absolute;
-            top: 1rem;
-            left: 1.5rem;
-            font-size: 4rem;
+            top: 1rem;       /* aligns the quote with the top of the text */
+            left: 1rem;      /* starts the quote at the very left */
+            font-size: 4rem; /* large quote size */
             color: var(--secondary-color);
             opacity: 0.3;
+            line-height: 1;  /* ensures quote aligns nicely with text */
         }
 
         .testimonial-text {
