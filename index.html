@@ -847,14 +847,14 @@
             padding: 2rem 0;
         }
 
-        .logos-container {
-            max-width: 1200px; /* same as services-grid */
-            margin: 0 auto; /* center horizontally */
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* responsive columns */
-            gap: 2rem; /* space between logos */
-            align-items: center;
-        }
+.logos-container {
+    max-width: 1200px; /* same as services-grid */
+    margin: 0 auto; /* center horizontally */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* fixed 3 columns */
+    gap: 2rem; /* space between logos */
+    align-items: center;
+}
 
         .logos-container img {
             width: 100%; /* fill the grid cell */
@@ -1484,13 +1484,15 @@
                 <!-- Logos Section -->
         <section class="logos" id="logos">
             <div class="logos-container">
+                <img src="au.png" alt="Logo 2">
+                <img src="worldbank.jpeg" alt="Logo 3">
 
                 <img src="kenvest.png" alt="Logo 2">
                 <img src="kebs.png" alt="Logo 1">
                 <img src="govt.png" alt="Logo 2">
-                <img src="worldbank.jpeg" alt="Logo 3">
+             
                 <img src="images/logo3.png" alt="Logo 2">
-                <img src="au.png" alt="Logo 2">
+                
                 
             </div>
         </section>
